@@ -10,10 +10,14 @@ def my_hash
     :"dog" => "puppies",
     :"cat" => "kitten"
   }
+  return myHash
 end
 
 def pioneer
   # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
+  return {
+    :name => "Grace Hopper"
+  }
 end
 
 def id_generator
