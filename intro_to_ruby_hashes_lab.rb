@@ -50,5 +50,5 @@ def update_counting_hash(hash, key)
   else
     tempHash[key] = 1
   end
-  return hash
+  return tempHash
 end
