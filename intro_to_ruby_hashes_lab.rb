@@ -45,10 +45,10 @@ def update_counting_hash(hash, key)
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
   tempHash = hash
-  if tempHash[key]
-    tempHash[key] += 1.
-  else
-    tempHash[key] = 1
-  end
+    if tempHash[key]
+      tempHash[key] += 1.
+    else
+      tempHash[key] = 1
+    end
   return tempHash
 end
