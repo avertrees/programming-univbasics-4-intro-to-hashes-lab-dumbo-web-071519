@@ -47,8 +47,10 @@ def update_counting_hash(hash, key)
   tempHash = hash
     if tempHash[key]
       tempHash[key] += 1.
-    elif
+    elsif !tempHash[key]
       tempHash[key] = 1
+    else
+      return tempHash
     end
   return tempHash
 end
